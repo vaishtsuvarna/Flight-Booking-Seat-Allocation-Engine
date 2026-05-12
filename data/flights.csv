@@ -1,0 +1,6 @@
+flight_id,airline,source,destination,seat_capacity
+F001,AirIndia,Delhi,Mumbai,180
+F002,Indigo,Hyderabad,Bangalore,120
+F003,SpiceJet,Chennai,Delhi,150
+F004,Vistara,Mumbai,Kolkata,200
+F005,AirAsia,Bangalore,Goa,90

@@ -1,0 +1,27 @@
+2026-05-11 22:12:08 | INFO     |   Flight Booking & Seat Allocation Engine — START
+2026-05-11 22:12:08 | INFO     | ============================================================
+2026-05-11 22:12:08 | INFO     | Loading data...
+2026-05-11 22:12:08 | INFO     | Loaded 'data/flights.csv' — 5 row(s).
+2026-05-11 22:12:08 | INFO     | Loaded 'data/flight_bookings.csv' — 10 row(s).
+2026-05-11 22:12:08 | INFO     |   Loaded 5 flight(s), 10 booking(s).
+2026-05-11 22:12:08 | INFO     | Validating bookings...
+2026-05-11 22:12:08 | ERROR    | Flight F006 does not exist — bookings rejected.
+2026-05-11 22:12:08 | ERROR    | 1 booking(s) rejected: seats_booked must be > 0.
+2026-05-11 22:12:08 | ERROR    | 1 booking(s) rejected: invalid booking_date.
+2026-05-11 22:12:08 | INFO     | Validation complete: 7 valid, 3 invalid booking(s).
+2026-05-11 22:12:08 | INFO     |   7 valid booking(s) passed validation.
+2026-05-11 22:12:08 | INFO     | Allocating seats...
+2026-05-11 22:12:08 | INFO     | Booking B001: CONFIRMED (2 seats on flight F001).
+2026-05-11 22:12:08 | INFO     | Booking B002: CONFIRMED (1 seats on flight F002).
+2026-05-11 22:12:08 | INFO     | Booking B003: CONFIRMED (3 seats on flight F003).
+2026-05-11 22:12:08 | WARNING  | Booking B004: WAITLIST (requested 200, only 178 left on flight F001).
+2026-05-11 22:12:08 | INFO     | Booking B005: CONFIRMED (2 seats on flight F004).
+2026-05-11 22:12:08 | INFO     | Booking B009: CONFIRMED (1 seats on flight F003).
+2026-05-11 22:12:08 | INFO     | Booking B010: CONFIRMED (4 seats on flight F004).
+2026-05-11 22:12:08 | INFO     |   Allocation complete — CONFIRMED: 6, WAITLIST: 1.
+2026-05-11 22:12:08 | INFO     | Generating reports...
+2026-05-11 22:12:08 | INFO     | Report saved: booking_status_report.csv (7 rows)
+2026-05-11 22:12:08 | INFO     | Report saved: flight_seat_summary.csv (4 rows)
+2026-05-11 22:12:08 | INFO     | booking_status_report.csv
+2026-05-11 22:12:08 | INFO     | flight_seat_summary.csv
+2026-05-11 22:12:08 | INFO     |   Engine completed successfully.
